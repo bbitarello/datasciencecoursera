@@ -9,7 +9,7 @@ Specifically, this consists of combining multiple files into one dataset as foll
 
 2. Extracts only the measurements on the mean and standard deviation for each measurement: the labels for these two dataset columns are in features.txt. Only columns containing the word 'Mean' and 'std'were selected.
 
-3.Uses descriptive activity names to name the activities in the data set: for this data from activity_labels.txt was used.
+3. Uses descriptive activity names to name the activities in the data set: for this data from activity_labels.txt was used.
 
 4. Appropriately labels the data set with descriptive variable names: see Codebook.md
 
