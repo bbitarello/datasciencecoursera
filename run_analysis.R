@@ -44,7 +44,7 @@ combined %>% group_by(Subject_ID, Activity_Labels) %>% select(contains('Mean')) 
 
 #Appropriately labels the data set with descriptive variable names.
 
-gsub("tGravity", "EuclideanNorm",gsub("tBody", "EuclideanNorm", gsub("fBody", "FastFourierTransformBody",gsub("Acc", "Acceleration", names(final)))))-> names(final)
+gsub("mean\\(\\)","mean",gsub("tGravity", "EuclideanNorm",gsub("tBody", "EuclideanNorm", gsub("fBody", "FastFourierTransformBody",gsub("Acc", "Acceleration", names(final))))))-> names(final)
 
 cat('checkpoint 3\n')
 write.table(final,file='tidy_data.txt', row.names=F)
